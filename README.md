@@ -5,15 +5,16 @@
 ![Screenshot](https://fantasticon.s3.eu-west-2.amazonaws.com/readme/screenshot.png)
 
 <blockquote align="center">
-  Fork of <a href="https://github.com/tancredi/fantasticon">fantasticon</a> that implements a forked
+  Fork of <a href="https://github.com/ramirezcgn/fantasticon">fantasticon</a> that implements a forked
   version of <a href="https://github.com/ramirezcgn/svgicons2svgfont">svgicons2svgfont</a> that support
   more options than the original.
+  Custom scss options.
   Easy-to-use, pre-configured CLI tool to generate web-font icon kits from SVG files
 </blockquote>
 
 <p align="center">
-  <img src="https://github.com/ramirezcgn/fantasticon/workflows/Test/badge.svg" alt="Test status">
-  <img src="https://github.com/ramirezcgn/fantasticon/workflows/Release/badge.svg" alt="Release status">
+  <img src="https://github.com/pluslabeplus/fantasticon/workflows/Test/badge.svg" alt="Test status">
+  <img src="https://github.com/pluslabeplus/fantasticon/workflows/Release/badge.svg" alt="Release status">
 </p>
 
 ### Intro
@@ -25,7 +26,7 @@ It also generates TypeScript types, JSON maps of the generated code-points, allo
 ### Install
 
 ```bash
-npm install -g @ramirezcgn/fantasticon
+npm install -g @eplus/fantasticon
 ```
 
 ## Use
@@ -206,4 +207,4 @@ PRs are always welcome. If you need help questions, want to bounce ideas or just
 
 ### License
 
-Copyright (c) 2020 Tancredi Trugenberger. - Released under the [MIT license](https://github.com/ramirezcgn/fantasticon/blob/master/LICENSE)
+Copyright (c) 2020 Tancredi Trugenberger. - Released under the [MIT license](https://github.com/pluslabeplus/fantasticon/blob/master/LICENSE)
