@@ -9,4 +9,4 @@ export {
 
 export { RunnerOptions } from './types/runner';
 
-export { generateFonts, generateFonts as default } from './core/runner';
+export { generateFonts, generateFonts as default } from './core/runner'; // test
