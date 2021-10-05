@@ -1,10 +1,10 @@
 {
-  "name": "@ramirezcgn/fantasticon",
+  "name": "@eplus/fantasticon",
   "version": "1.2.4",
   "description": "Fork of fantasticon that implements a forked version of svgicons2svgfont that support more options than the original.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ramirezcgn/fantasticon.git"
+    "url": "git+https://github.com/pluslabeplus/fantasticon.git"
   },
   "keywords": [
     "icons",
@@ -15,9 +15,9 @@
   ],
   "author": "Tancredi Trugenberger",
   "bugs": {
-    "url": "https://github.com/ramirezcgn/fantasticon/issues"
+    "url": "https://github.com/pluslabeplus/fantasticon/issues"
   },
-  "homepage": "https://github.com/ramirezcgn/fantasticon#readme",
+  "homepage": "https://github.com/pluslabeplus/fantasticon#readme",
   "main": "lib/index.js",
   "bin": {
     "fantasticon": "bin/fantasticon"
