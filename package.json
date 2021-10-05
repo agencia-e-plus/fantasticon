@@ -1,6 +1,6 @@
 {
-  "name": "@eplus/fantasticon",
-  "version": "1.2.4",
+  "name": "@pluslab/fantasticon",
+  "version": "1.2.0",
   "description": "Fork of fantasticon that implements a forked version of svgicons2svgfont that support more options than the original.",
   "repository": {
     "type": "git",

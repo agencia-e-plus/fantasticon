@@ -26,7 +26,7 @@ It also generates TypeScript types, JSON maps of the generated code-points, allo
 ### Install
 
 ```bash
-npm install -g @eplus/fantasticon
+npm install -g @pluslab/fantasticon
 ```
 
 ## Use
