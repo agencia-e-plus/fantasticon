@@ -21,6 +21,8 @@ interface TsOptions {
 
 interface ScssOptions {
   cssExtension: boolean;
+  generateClasses: boolean;
+  splitFontSrcToOtherFile: boolean;
 }
 
 export interface FormatOptions {

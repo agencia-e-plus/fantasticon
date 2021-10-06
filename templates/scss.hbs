@@ -1,24 +1,13 @@
 ${{ name }}-font: "{{ name }}";
 
+{{# if generateSrc }}
 @font-face {
     font-family: ${{ name }}-font;
     src: {{{ fontSrc }}};
 }
-
-{{# if selector }}
-{{ selector }}:before {
 {{ else }}
-{{ tag }}[class^="{{prefix}}-"]:before, {{ tag }}[class*=" {{prefix}}-"]:before {
+@import './{{ filename }}_fontSrc.scss';
 {{/ if }}
-    font-family: {{ name }} !important;
-    font-style: normal;
-    font-weight: normal !important;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
 
 ${{ name }}-map: (
 {{# each codepoints }}
@@ -27,11 +16,37 @@ ${{ name }}-map: (
 );
 
 {{# each codepoints }}
+$icon-{{ @key }}: "\\{{ codepoint this }}";
+{{/ each }}
+
+{{# if generateClasses }}
+
+{{# if selector }}
+{{ selector }}:before {
+{{ else }}
+{{ tag }}[class^="{{prefix}}-"]:before, {{ tag }}[class*=" {{prefix}}-"]:before {
+{{/ if }}
+	font-family: {{ name }} !important;
+	font-style: normal;
+	font-weight: normal !important;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	display: inline-flex;
+	color: inherit;
+}
+
+{{# each codepoints }}
 {{# if ../selector }}
 {{ ../selector }}.{{ ../prefix }}-{{ @key }}:before {
 {{ else }}
 {{ tag }}.{{ ../prefix }}-{{ @key }}:before {
 {{/ if }}
-    content: map-get(${{ ../name }}-map, "{{ @key }}");
+	content: $icon-{{ @key }};
 }
 {{/ each }}
+
+{{/ if }}
