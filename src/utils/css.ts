@@ -19,7 +19,7 @@ const renderSrcOptions: { [key in FontAssetType]: RenderSrcOptions } = {
 };
 
 export const renderSrcAttribute = (
-  { name, fontTypes, fontsUrl }: FontGeneratorOptions,
+  { name, fontTypes, fontsUrl, formatOptions: { scss } }: FontGeneratorOptions,
   font: string | Buffer
 ) =>
   fontTypes
@@ -27,8 +27,9 @@ export const renderSrcAttribute = (
       const { formatValue, getSuffix } = renderSrcOptions[fontType];
       const hash = getHash(font.toString('utf8'));
       const suffix = getSuffix ? getSuffix(name) : '';
+      const cssExt = scss.cssExtension ? '.css' : '';
       return `url("${
         fontsUrl || '.'
-      }/${name}.${fontType}?${hash}${suffix}") format("${formatValue}")`;
+      }/${name}.${fontType}${cssExt}?${hash}${suffix}") format("${formatValue}")`;
     })
     .join(',\n');

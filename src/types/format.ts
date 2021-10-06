@@ -19,10 +19,15 @@ interface TsOptions {
   singleQuotes?: boolean;
 }
 
+interface ScssOptions {
+  cssExtension: boolean;
+}
+
 export interface FormatOptions {
   woff?: WoffOptions;
   ttf?: TtfOptions;
   svg?: SvgOptions;
   json?: JsonOptions;
   ts?: TsOptions;
+  scss?: ScssOptions;
 }
