@@ -26,7 +26,7 @@ const generator: FontGenerator<Buffer> = {
         fs.writeFileSync(path, response);
       });
     }
-    console.log(options.formatOptions.scss.generateClasses)
+    
     return renderTemplate(
       options.templates.scss,
       {
