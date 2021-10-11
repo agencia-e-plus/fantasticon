@@ -19,6 +19,7 @@ export type RunnerOptionalOptions = {
   descent: number;
   normalize: boolean;
   preserveAspectRatio: boolean;
+  center: boolean;
   round: number;
   selector: string;
   tag: string;

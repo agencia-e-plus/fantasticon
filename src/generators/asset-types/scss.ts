@@ -10,7 +10,7 @@ const generator: FontGenerator<Buffer> = {
   dependsOn: FontAssetType.SVG,
 
   generate: (options, svg: Buffer) => {
-    const filename = parse(options.pathOptions.scss).name;
+    const filename = parse(options.pathOptions.scss ?? 'scss.scss').name;
     let generateSrc: boolean | undefined;
     if (options?.formatOptions?.scss?.splitFontSrcToOtherFile) {
       generateSrc = false;
