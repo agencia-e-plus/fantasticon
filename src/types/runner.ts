@@ -18,6 +18,7 @@ export type RunnerOptionalOptions = {
   fontHeight: number;
   descent: number;
   normalize: boolean;
+  center: boolean;
   round: number;
   selector: string;
   tag: string;

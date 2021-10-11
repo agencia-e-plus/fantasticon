@@ -11,6 +11,7 @@ const generator: FontGenerator<void> = {
     descent,
     normalize,
     assets,
+    center,
     codepoints,
     formatOptions: { svg } = {}
   }) =>
@@ -18,6 +19,8 @@ const generator: FontGenerator<void> = {
       let font = Buffer.alloc(0);
 
       const fontStream = new SVGIcons2SVGFontStream({
+        centerHorizontally: center,
+        centerVertically: center,
         fontName,
         fontHeight,
         descent,
