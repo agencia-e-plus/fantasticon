@@ -28,6 +28,7 @@ const CONFIG_VALIDATORS: {
   fontHeight: [optional(parseNumeric)],
   descent: [optional(parseNumeric)],
   normalize: [optional(parseBoolean)],
+  center: [optional(parseBoolean)],
   round: [optional(parseNumeric)],
   selector: [nullable(parseString)],
   tag: [parseString],
