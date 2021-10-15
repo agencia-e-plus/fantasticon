@@ -29,6 +29,7 @@ const CONFIG_VALIDATORS: {
   descent: [optional(parseNumeric)],
   normalize: [optional(parseBoolean)],
   preserveAspectRatio: [optional(parseBoolean)],
+  center: [optional(parseBoolean)],
   round: [optional(parseNumeric)],
   selector: [nullable(parseString)],
   tag: [parseString],
