@@ -10,7 +10,7 @@ env:
 
 jobs:
   release:
-    if: "!contains(github.event.head_commit.message, 'skip ci') && github.repository == 'pluslabeplus/fantasticon'"
+    if: "!contains(github.event.head_commit.message, 'skip ci') && github.repository == 'agencia-e-plus/fantasticon'"
     name: Release
 
     runs-on: ubuntu-18.04
