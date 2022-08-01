@@ -103,6 +103,12 @@ const config = () => {
         printDefaultOption('normalize')
     )
 
+    .option(
+      '--preserveAspectRatio [bool]',
+      'used with normalize to scale down glyph if the SVG width is greater than the height' +
+        printDefaultOption('preserveAspectRatio')
+    )
+
     .option('-r, --round [bool]', 'setup the SVG path rounding [10e12]')
 
     .option(
@@ -146,6 +152,7 @@ const buildOptions = async (cmd: commander.Command, loadedConfig = {}) => {
       fontHeight: opts.fontHeight,
       descent: opts.descent,
       normalize: opts.normalize,
+      preserveAspectRatio: opts.preserveAspectRatio,
       round: opts.round,
       selector: opts.selector,
       tag: opts.tag,

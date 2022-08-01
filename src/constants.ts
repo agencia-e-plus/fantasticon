@@ -25,6 +25,7 @@ export const DEFAULT_OPTIONS: Omit<RunnerOptions, 'inputDir' | 'outputDir'> = {
   fontHeight: 300,
   descent: undefined,
   normalize: undefined,
+  preserveAspectRatio: undefined,
   selector: null,
   tag: 'i',
   prefix: 'icon',

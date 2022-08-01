@@ -23,6 +23,7 @@ const mockConfig = {
   fontHeight: 1,
   descent: 2,
   normalize: true,
+  preserveAspectRatio: true,
   round: 3,
   selector: null,
   startCodepoint: DEFAULT_START_CODEPOINT,

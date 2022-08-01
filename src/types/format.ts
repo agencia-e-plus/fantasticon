@@ -7,7 +7,7 @@ type WoffOptions = Arguments<typeof ttf2woff>[1];
 type TtfOptions = svg2ttf.FontOptions;
 type SvgOptions = Omit<
   SvgIcons2FontOptions,
-  'fontName' | 'fontHeight' | 'descent' | 'normalize'
+  'fontName' | 'fontHeight' | 'descent' | 'normalize' | 'preserveAspectRatio'
 >;
 
 interface JsonOptions {

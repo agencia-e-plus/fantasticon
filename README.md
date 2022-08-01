@@ -54,6 +54,7 @@ Options:
   -h, --font-height <value>    the output font height (icons will be scaled so the highest has this height) (default: 300)
   --descent <value>            the font descent
   --normalize [bool]           normalize icons by scaling them to the height of the highest icon
+  --preserveAspectRatio [bool] used with normalize to scale down glyph if the SVG width is greater than the height
   -r, --round [bool]           setup the SVG path rounding [10e12]
   --selector <value>           use a CSS selector instead of 'tag + prefix' (default: null)
   -p, --prefix <value>         CSS class prefix (default: icon)
@@ -162,6 +163,7 @@ generateFonts({
   round: undefined, // --
   descent: undefined, // Will use `svgicons2svgfont` defaults
   normalize: undefined, // --
+  preserveAspectRatio: undefined, // --
   selector: null,
   tag: 'i',
   prefix: 'icon',

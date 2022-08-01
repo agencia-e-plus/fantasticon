@@ -50,6 +50,7 @@ const mockOptions = (svgOptions = { __mock: 'options__' } as any) =>
     fontHeight: 1,
     descent: 2,
     normalize: false,
+    preserveAspectRatio: false,
     formatOptions: { [FontAssetType.SVG]: svgOptions },
     codepoints: { foo: 1, bar: 1 },
     assets: {
@@ -73,6 +74,7 @@ describe('`SVG` font generator', () => {
       fontName: 'foo',
       log: expect.any(Function),
       normalize: false,
+      preserveAspectRatio: false,
       __mock: 'options__'
     });
 
@@ -92,7 +94,8 @@ describe('`SVG` font generator', () => {
       fontHeight: 6,
       fontName: 'foo',
       log,
-      normalize: false
+      normalize: false,
+      preserveAspectRatio: false
     });
   });
 });
